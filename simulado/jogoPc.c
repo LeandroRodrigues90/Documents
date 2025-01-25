@@ -6,7 +6,7 @@ int main(){
     char tipodeComparacao;
 
 //srand veio da declaração da função stdlib
-    srand(time(0));
+    srand(time (0));
 //  AQUI O NUMERO DO ALEATORIO E OBTIDO SOMANDO MAIS UM PQ A DIVISAO DE 100 NUMERO DARIA SO 99
     numeroPc = rand() % 100 + 1;
 
