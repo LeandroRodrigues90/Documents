@@ -54,7 +54,7 @@ int main(){
     //AO FINAL É DECLADO OS NUMEROS DO OPERADOR E DO COMPUTADOR E O RESULTADO É COMPARADO POR O IF E ELSE
     
     
-    printf("O seu numero é %d: e o numero do Computador é %d:\n",numeroJogador,numeroPc);
+    printf("O seu numero é : %d e o numero do Computador é : %d\n",numeroJogador,numeroPc);
 
     if (resultado==1)
     {
