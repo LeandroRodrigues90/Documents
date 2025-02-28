@@ -1,20 +1,53 @@
 #include <stdio.h>
+#include <string.h>
+//função sem parametro e sem retorno
+void messagem(){
+    printf("Meu Programa de dados e formulas\n");
+}
+//função com parametro e sem retorno
+void parar(char final[]){
+    printf("THE END",&final);
+}
+//função com parametro e com retorno
+int multiplicacao(int a,int b){
+    return(a*b);
+}
+//estrutura para receber dados 
+struct Dados
+{
+   char nome[50];
+   int idade;
+   float altura;
+    /* data */
+};
+
+
 int main(){
-    float nota1,nota2,nota3;
-    float media;
+    //inicio do programa
+    messagem();
 
-    printf("Digite sua primeira nota?");
-    scanf("%f", &nota1);
-    printf("Digite sua segunda nota?");
-    scanf("%f", &nota2);
-    printf("Digite sua terceira nota?");
-    scanf("%f", &nota3);
+    //acessar os dados agora
+    struct Dados pessoa1;
+    strcpy(pessoa1.nome,"Leandro");
+    pessoa1.idade=35;
+    pessoa1.altura=1.78;
 
-    media= (nota1 + nota2 + nota3) /3;
+    printf("Nome do Aluno é %s e sua idade %d e sua altura é %0.2f\n",pessoa1.nome,pessoa1.idade,pessoa1.altura);
 
-    printf("A media é %.2f",media);
+
+    //passar agora a função de multiplicação para finalizar o sistema
+    int x=145;
+    int y=9;
+    int resultado=multiplicacao(x,y);
+
+    printf("o resultado da multiplicação de %d e %d é igual a %d \n",x,y,resultado);
+
+    //passando o final do programa por uma mensagem
+
+    parar("Esse é o fim do sistema");
+    
+    
+
 
     return 0;
-
-
 }
